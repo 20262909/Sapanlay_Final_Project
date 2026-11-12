@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UB IT Study Hub — Home</title>
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Header & Navigation Bar (Linked Across All Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="MIA SAY UB IT Study Hub Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 6l12 6 12-6v16l-12 6-12-6V6z" fill="none" stroke="#000000" stroke-width="2.5"/>
+          <path d="M4 11l12 6 12-6M16 17v11" fill="none" stroke="#000000" stroke-width="2.5"/>
+        </svg>
+        <span>MIA SAY</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html" class="active" aria-current="page">HOME</a>
+        <a href="progit.html">PROGIT</a>
+        <a href="intrcs-lesson1-1.html">INTRCS</a>
+        <a href="humcom.html">HUMCOM</a>
+        <a href="cmptrb.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Captology Microsuasion & Personal Nudge Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Nudges">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome back, Maria! You're 65% away from completing your IT reviewer goal.</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">3-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Course completion progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 35%</span>
+        </div>
+        <span class="reminder-pill">Reminder: Review INTRCS Lesson 1.1 & Quiz 1.1</span>
+      </div>
+    </div>
+  </section>
+
+  <main id="main-content" class="dashboard-main">
+    <section class="hero-section">
+      <h1>UB IT STUDY HUB</h1>
+      <p class="hero-subtitle">A personal academic hub containing notes, diagrams, and interactive quizzes for BS Information Technology subjects.</p>
+    </section>
+
+    <section class="subject-grid" aria-label="BSIT First Semester Subjects">
+      <a href="progit.html" class="subject-card">
+        <span class="subject-card-code">PROGIT1</span>
+        <span class="subject-card-name">Computer Programming</span>
+        <span class="subject-card-badge">Subject Dashboard</span>
+      </a>
+
+      <a href="intrcs-lesson1-1.html" class="subject-card">
+        <span class="subject-card-code">INTRCS1</span>
+        <span class="subject-card-name">Introduction to Computing Systems</span>
+        <span class="subject-card-badge" style="background-color:#DCFCE7; color:#14532D; border-color:#86EFAC;">Lesson 1.1 &amp; Quiz 1.1 Active</span>
+      </a>
+
+      <a href="humcom.html" class="subject-card">
+        <span class="subject-card-code">HUMCOM1</span>
+        <span class="subject-card-name">Human-Computer Interaction</span>
+        <span class="subject-card-badge">Subject Dashboard</span>
+      </a>
+
+      <a href="cmptrb.html" class="subject-card">
+        <span class="subject-card-code">CMPTRB1</span>
+        <span class="subject-card-name">Computer Troubleshooting</span>
+        <span class="subject-card-badge" style="background-color:#DCFCE7; color:#14532D; border-color:#86EFAC;">Experiment 1 Active</span>
+      </a>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="study-popup-modal" data-auto-prompt="true" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="modal-card">
+      <h3 id="popup-title">Keep Your Study Streak Going!</h3>
+      <p id="popup-body">Complete one active lesson or quiz today to push your progress bar past 50%!</p>
+      <a href="intrcs-lesson1-1.html" class="btn-primary" style="display:inline-block; text-decoration:none;">Open INTRCS Lesson 1.1</a>
+      <button type="button" id="close-popup-btn" class="btn-secondary">Dismiss</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 UB IT Study Hub — Maria Concepcion M. Sapanlay.</p>
+      
+      <!-- Philippine NPC Data Privacy / HTTPS Verification Seal & QR Code (Bottom Right) -->
+      <div class="dpo-seal-box" aria-label="Philippine National Privacy Commission HTTPS Seal and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine Data Privacy HTTPS Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          NPC DPO / HTTPS VERIFIED
+          <span>Republic of the Philippines &bull; Data Privacy Act</span>
+        </div>
+        <!-- Inline SVG Verification QR Code -->
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

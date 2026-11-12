@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UB IT Study Hub — CMPTRB1 Experiment 1: Cables and Connectors</title>
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Header & Navigation Bar (Linked Across All Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="MIA SAY UB IT Study Hub Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 6l12 6 12-6v16l-12 6-12-6V6z" fill="none" stroke="#000000" stroke-width="2.5"/>
+          <path d="M4 11l12 6 12-6M16 17v11" fill="none" stroke="#000000" stroke-width="2.5"/>
+        </svg>
+        <span>MIA SAY</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a>
+        <a href="progit.html">PROGIT</a>
+        <a href="intrcs-lesson1-1.html">INTRCS</a>
+        <a href="humcom.html">HUMCOM</a>
+        <a href="cmptrb.html" class="active" aria-current="page">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+  <!-- Captology Microsuasion & Personal Nudge Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Nudges">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome back, Maria! Complete Experiment 1 below to boost your streak.</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">3-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Course completion progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 35%</span>
+        </div>
+        <span class="reminder-pill">Reminder: Complete Self-Check at the bottom!</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Left Sidebar with Collapsible Lab Units -->
+    <aside class="sidebar-nav" aria-label="CMPTRB Experiments Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">CMPTRB</span>
+        <span class="sidebar-title">Computer Troubleshooting</span>
+      </div>
+
+      <div class="sidebar-mode-switch" role="group" aria-label="Switch between Lab Notes and Self-Check">
+        <a href="experiment1.html" class="mode-btn active">Lab Material</a>
+        <a href="experiment1.html#self-check" class="mode-btn">Self-Check</a>
+      </div>
+
+      <details class="unit-group" open>
+        <summary class="unit-summary">Unit 1: Hardware &amp; Cabling</summary>
+        <div class="unit-list">
+          <a href="experiment1.html" class="unit-link active" aria-current="page">
+            <span>Experiment 1: Cables and Connectors</span>
+            <span class="status-tag ready">Active</span>
+          </a>
+          <a href="#upcoming" class="unit-link locked" data-item-title="Experiment 2: Motherboard &amp; PSU Diagnostics">
+            <span>Experiment 2: Motherboard &amp; PSU Diagnostics</span>
+            <span class="status-tag soon">Soon</span>
+          </a>
+          <a href="#upcoming" class="unit-link locked" data-item-title="Experiment 3: BIOS/UEFI &amp; POST Beep Codes">
+            <span>Experiment 3: BIOS/UEFI &amp; POST Beep Codes</span>
+            <span class="status-tag soon">Soon</span>
+          </a>
+        </div>
+      </details>
+
+      <details class="unit-group">
+        <summary class="unit-summary">Unit 2: OS &amp; Storage Recovery</summary>
+        <div class="unit-list">
+          <a href="#upcoming" class="unit-link locked" data-item-title="Experiment 4: Disk Partitioning &amp; Boot Repair">
+            <span>Experiment 4: Disk Partitioning &amp; Boot Repair</span>
+            <span class="status-tag soon">Soon</span>
+          </a>
+          <a href="#upcoming" class="unit-link locked" data-item-title="Experiment 5: Network Crimping &amp; Continuity Testing">
+            <span>Experiment 5: Network Crimping &amp; Continuity Testing</span>
+            <span class="status-tag soon">Soon</span>
+          </a>
+        </div>
+      </details>
+    </aside>
+
+    <!-- Main Experiment Workspace -->
+    <main id="main-content" class="workspace-content">
+      <div class="experiment-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>EXPERIMENT 1</h1>
+            <p class="experiment-subtitle">Cables and Connectors</p>
+          </div>
+        </div>
+
+        <button type="button" class="btn-download" onclick="window.print()" aria-label="Download or print Experiment 1 Reviewer PDF">
+          &#11015; Download Reviewer
+        </button>
+      </div>
+
+      <!-- Captology Warning Message -->
+      <div class="warning-banner" role="alert">
+        <strong>Lab Safety Warning:</strong> Always discharge static electricity (ESD) and power down the PSU before disconnecting internal power cables or seating expansion connectors.
+      </div>
+
+      <section class="lesson-section">
+        <h2>Objectives</h2>
+        <ul>
+          <li>Identify standard internal and external computer cables and connectors used in modern workstations.</li>
+          <li>Differentiate data, display, audio, and power connectors by pin layout and bandwidth capabilities.</li>
+          <li>Apply proper cable management and electrostatic discharge (ESD) precautions during hardware assembly.</li>
+        </ul>
+      </section>
+
+      <section class="lesson-section">
+        <h2>Background &amp; Key Connector Reference</h2>
+        <p>Reliable communication between a system unit and its peripherals depends on matching physical connector interfaces with their corresponding signal standards:</p>
+        <ul>
+          <li><strong>RJ45 (8P8C Modular Connector):</strong> Used with twisted-pair Ethernet cables (Cat5e/Cat6) for wired LAN connectivity up to 1000 Mbps (1 Gbps) or 10 Gbps.</li>
+          <li><strong>HDMI (High-Definition Multimedia Interface):</strong> 19-pin digital interface transmitting uncompressed high-definition video and multi-channel digital audio over a single cable.</li>
+          <li><strong>VGA (Video Graphics Array):</strong> Legacy 15-pin D-subminiature connector transmitting analog RGBHV video signals (video only, no audio).</li>
+          <li><strong>SATA (Serial ATA):</strong> 7-pin L-shaped data connector and 15-pin power connector used for 2.5-inch SSDs, 3.5-inch HDDs, and optical drives.</li>
+          <li><strong>USB Type-C:</strong> Reversible 24-pin connector supporting high-speed data transfer, DisplayPort Alt Mode, and USB Power Delivery.</li>
+        </ul>
+      </section>
+
+      <!-- Interactive Self-Check Quiz -->
+      <section id="self-check" class="lesson-section">
+        <h2>Experiment 1 Interactive Self-Check</h2>
+        <form id="lab-self-check-form" class="quiz-box" novalidate>
+          <div class="quiz-question">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which display connector carries both uncompressed digital video and multi-channel audio?</span>
+              <button type="button" id="q1-info" class="info-trigger" aria-label="Hint for Question 1">
+                i
+                <span class="info-tooltip" id="q1-tip" role="tooltip">Suggestion: Compare the 19-pin digital connector with the legacy 15-pin analog connector.</span>
+              </button>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="cable-q1" value="A"> A. VGA (15-pin D-sub)</label>
+              <label><input type="radio" name="cable-q1" value="B"> B. HDMI (19-pin Digital)</label>
+              <label><input type="radio" name="cable-q1" value="C"> C. PS/2 Mini-DIN</label>
+            </div>
+          </div>
+
+          <div class="quiz-question">
+            <div class="quiz-q-header">
+              <label for="rj45-speed" class="quiz-q-title">2. What is the standard Gigabit Ethernet speed for a Cat5e/Cat6 RJ45 cable? (e.g., 1000 Mbps or 1 Gbps)</label>
+            </div>
+            <div class="quiz-text-row">
+              <input type="text" id="rj45-speed" class="quiz-text-input" placeholder="e.g., 1000 Mbps">
+              <button type="button" id="rj45-info" class="info-trigger" aria-label="Hint for Question 2">
+                i
+                <span class="info-tooltip" id="rj45-tip" role="tooltip">Suggestion: Standard Cat5e/Cat6 RJ45 Ethernet cables operate at 1000 Mbps (1 Gbps).</span>
+              </button>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary">Verify Lab Answers</button>
+          <div id="praise-banner" class="praise-banner" role="status" aria-live="polite"></div>
+        </form>
+      </section>
+
+      <section class="lesson-section">
+        <h2>References (APA 7th Edition)</h2>
+        <ul>
+          <li>Meyers, M. (2022). <em>CompTIA A+ certification all-in-one exam guide</em> (11th ed.). McGraw-Hill Education.</li>
+          <li>University of Baguio. (2026). <em>CMPTRB1: Computer troubleshooting laboratory manual — Experiment 1: Cables and connectors</em>. School of Information Technology.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="study-popup-modal" data-auto-prompt="false" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="modal-card">
+      <h3 id="popup-title">Upcoming Lab Experiment</h3>
+      <p id="popup-body">Complete Experiment 1 first to unlock your next milestone!</p>
+      <button type="button" id="close-popup-btn" class="btn-primary">Got It</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 UB IT Study Hub — Maria Concepcion M. Sapanlay.</p>
+      
+      <!-- Philippine NPC Data Privacy / HTTPS Verification Seal & QR Code (Bottom Right) -->
+      <div class="dpo-seal-box" aria-label="Philippine National Privacy Commission HTTPS Seal and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine Data Privacy HTTPS Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          NPC DPO / HTTPS VERIFIED
+          <span>Republic of the Philippines &bull; Data Privacy Act</span>
+        </div>
+        <!-- Inline SVG Verification QR Code -->
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

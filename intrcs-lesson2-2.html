@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UB IT Study Hub — INTRCS Lesson 2.2: Encoding Standards — Giving Meaning to Binary</title>
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="MIA SAY UB IT Study Hub Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 6l12 6 12-6v16l-12 6-12-6V6z" fill="none" stroke="#000000" stroke-width="2.5"/>
+          <path d="M4 11l12 6 12-6M16 17v11" fill="none" stroke="#000000" stroke-width="2.5"/>
+        </svg>
+        <span>MIA SAY</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a>
+        <a href="progit.html">PROGIT</a>
+        <a href="intrcs-lesson1-1.html" class="active" aria-current="page">INTRCS</a>
+        <a href="humcom.html">HUMCOM</a>
+        <a href="cmptrb.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Captology Microsuasion & Personal Nudge Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Nudges">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome back, Maria! You're 65% away from completing your IT reviewer goal.</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">3-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Course completion progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 35%</span>
+        </div>
+        <span class="reminder-pill">Reminder: Take Quiz 2.2 after reading!</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Left Sidebar with Collapsible Units 1, 2, and 3 -->
+    <aside class="sidebar-nav" aria-label="INTRCS Units and Modules Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">INTRCS</span>
+        <span class="sidebar-title">Introduction to Computing Systems</span>
+      </div>
+
+      <!-- Direct Switch Between Learn Material and Take a Quiz -->
+      <div class="sidebar-mode-switch" role="group" aria-label="Switch between Lessons and Quizzes">
+        <a href="intrcs-lesson2-2.html" class="mode-btn active">Learn Material</a>
+        <a href="intrcs-quiz2-2.html" class="mode-btn">Take a Quiz</a>
+      </div>
+
+      <!-- UNIT 1 -->
+      <details class="unit-group">
+        <summary class="unit-summary">Unit 1: Computing Foundations</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson1-1.html" class="unit-link">
+              <span>Lesson 1.1: The Computing Profession and Institutional Context</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson1-2.html" class="unit-link">
+              <span>Lesson 1.2: Core Components: Hardware</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson1-3.html" class="unit-link">
+              <span>Lesson 1.3: Core Components: Software</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+      <!-- UNIT 2 -->
+      <details class="unit-group" open>
+        <summary class="unit-summary">Unit 2: Data Representation &amp; Number Systems</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson2-1.html" class="unit-link">
+              <span>Lesson 2.1: Number Systems and Conversion</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson2-2.html" class="unit-link active" aria-current="page">
+              <span>Lesson 2.2: Encoding Standards</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson2-3.html" class="unit-link">
+              <span>Lesson 2.3: Boolean Logic and Gates</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+      <!-- UNIT 3 -->
+      <details class="unit-group">
+        <summary class="unit-summary">Unit 3: Connectivity &amp; Cybersecurity</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson3-1.html" class="unit-link">
+              <span>Lesson 3.1: Connectivity and Networking</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson3-2.html" class="unit-link">
+              <span>Lesson 3.2: Cybersecurity and Ethical Hacking</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+    </aside>
+
+    <!-- Main Lesson Workspace -->
+    <main id="main-content" class="workspace-content">
+      <div class="experiment-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>LESSON 2.2</h1>
+            <p class="experiment-subtitle">Encoding Standards — Text, Images, Audio, and Machine Code</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="intrcs-quiz2-2.html" class="btn-navy-link">Take Quiz 2.2 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()" aria-label="Download or print Lesson 2.2 Reviewer PDF">
+            &#11015; Download Reviewer
+          </button>
+        </div>
+      </div>
+
+      <!-- Captology Warning Message -->
+      <div class="warning-banner" role="alert">
+        <strong>Data Type Distinction Warning:</strong> The text character <code>'5'</code> (ASCII 53 = <code>00110101<sub>2</sub></code>) is stored differently from the numeric integer <code>5</code> (<code>00000101<sub>2</sub></code>) used in CPU math operations.
+      </div>
+
+
+      <section class="lesson-section">
+        <h2>2.2.1. Encoding Multimedia and Software into Binary</h2>
+        <p>An <strong>encoding standard</strong> is the "Rosetta Stone" dictionary mapping human-readable characters, colors, and sounds into agreed-upon binary sequences.</p>
+
+        <div class="concept-grid">
+          <article class="concept-card">
+            <h4>1. Digital Images (RGB Pixels)</h4>
+            <p>Images consist of a grid of <strong>pixels</strong>. In 24-bit RGB color, Red, Green, and Blue each use <strong>8 bits</strong> (0–255 intensity), totaling <strong>3 bytes (24 bits)</strong> per pixel and 16,777,216 colors.<br>
+            <em>Pure Red:</em> <code>11111111 00000000 00000000<sub>2</sub></code>.</p>
+          </article>
+          <article class="concept-card">
+            <h4>2. Digital Audio (ADC)</h4>
+            <p>An <strong>Analog-to-Digital Converter (ADC)</strong> digitizes sound waves via <strong>Sampling</strong> (taking amplitude snapshots per second, e.g., 44.1 kHz CD rate) and <strong>Quantization</strong> (mapping each sample to discrete binary values using a <strong>Bit Depth</strong> like 16-bit).</p>
+          </article>
+          <article class="concept-card">
+            <h4>3. Software Machine Code</h4>
+            <p>High-level code (Python, Java, C++, JS) is compiled or interpreted into CPU-specific binary <strong>machine code</strong> instructions executed directly by the processor architecture (x86 vs. ARM).</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section">
+        <h2>2.2.2. Character Encoding: ASCII vs. Unicode</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>ASCII (Standard &amp; Extended)</th>
+              <th>Unicode (UTF-8, UTF-16, UTF-32)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Bit Width</strong></td>
+              <td>7-bit (128 characters: 2<sup>7</sup>); Extended ASCII used 8-bit (256 codes, inconsistent across vendors).</td>
+              <td>Variable length: <strong>UTF-8</strong> uses 1 byte for ASCII and 2–4 bytes for global characters/emojis.</td>
+            </tr>
+            <tr>
+              <td><strong>Character Scope</strong></td>
+              <td>English uppercase (A–Z), lowercase (a–z), digits ('0'–'9'), punctuation, and control codes.</td>
+              <td>Over 140,000+ characters across all world languages (ñ, Kanji 汉, Arabic), math symbols, and emojis (🚀).</td>
+            </tr>
+            <tr>
+              <td><strong>Key Decimal Codes</strong></td>
+              <td>Space = 32 (<code>00100000</code>), '!' = 33, '0' = 48, 'A' = 65 (<code>01000001</code>), 'a' = 97 (<code>01100001</code>).</td>
+              <td>First 128 code points (0–127) are <strong>100% backward-compatible</strong> with 7-bit ASCII.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="lesson-section">
+        <h2>References (APA 7th Edition)</h2>
+        <ul>
+          <li>University of Baguio. (2026). <em>INTRCS1: Introduction to computing systems — Lesson 2.2: Encoding standards</em>. School of Information Technology.</li>
+        </ul>
+      </section>
+    
+    </main>
+  </div>
+
+  <!-- Captology Pop-up Prompt Modal -->
+  <div class="modal-backdrop" id="study-popup-modal" data-auto-prompt="false" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="modal-card">
+      <h3 id="popup-title">Ready to Test Your Mastery?</h3>
+      <p id="popup-body">Take Quiz 2.2 now to earn course progress and extend your study streak!</p>
+      <a href="intrcs-quiz2-2.html" class="btn-primary" style="display:inline-block; text-decoration:none;">Go to Quiz 2.2</a>
+      <button type="button" id="close-popup-btn" class="btn-secondary">Continue</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 UB IT Study Hub — Maria Concepcion M. Sapanlay.</p>
+      
+      <!-- Philippine NPC Data Privacy / HTTPS Verification Seal & QR Code (Bottom Right) -->
+      <div class="dpo-seal-box" aria-label="Philippine National Privacy Commission HTTPS Seal and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine Data Privacy HTTPS Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          NPC DPO / HTTPS VERIFIED
+          <span>Republic of the Philippines &bull; Data Privacy Act</span>
+        </div>
+        <!-- Inline SVG Verification QR Code -->
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

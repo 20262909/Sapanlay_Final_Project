@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UB IT Study Hub — INTRCS Lesson 1.2: Core Components of Computer Systems: Hardware</title>
+  <link rel="stylesheet" href="css/shared.css">
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Top Header & Navigation Bar -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="MIA SAY UB IT Study Hub Home">
+        <svg class="brand-icon" viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M4 6l12 6 12-6v16l-12 6-12-6V6z" fill="none" stroke="#000000" stroke-width="2.5"/>
+          <path d="M4 11l12 6 12-6M16 17v11" fill="none" stroke="#000000" stroke-width="2.5"/>
+        </svg>
+        <span>MIA SAY</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a>
+        <a href="progit.html">PROGIT</a>
+        <a href="intrcs-lesson1-1.html" class="active" aria-current="page">INTRCS</a>
+        <a href="humcom.html">HUMCOM</a>
+        <a href="cmptrb.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Captology Microsuasion & Personal Nudge Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Nudges">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome back, Maria! You're 65% away from completing your IT reviewer goal.</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">3-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Course completion progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 35%</span>
+        </div>
+        <span class="reminder-pill">Reminder: Take Quiz 1.2 after reading!</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Left Sidebar with Collapsible Units 1, 2, and 3 -->
+    <aside class="sidebar-nav" aria-label="INTRCS Units and Modules Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">INTRCS</span>
+        <span class="sidebar-title">Introduction to Computing Systems</span>
+      </div>
+
+      <!-- Direct Switch Between Learn Material and Take a Quiz -->
+      <div class="sidebar-mode-switch" role="group" aria-label="Switch between Lessons and Quizzes">
+        <a href="intrcs-lesson1-2.html" class="mode-btn active">Learn Material</a>
+        <a href="intrcs-quiz1-2.html" class="mode-btn">Take a Quiz</a>
+      </div>
+
+      <!-- UNIT 1 -->
+      <details class="unit-group" open>
+        <summary class="unit-summary">Unit 1: Computing Foundations</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson1-1.html" class="unit-link">
+              <span>Lesson 1.1: The Computing Profession and Institutional Context</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson1-2.html" class="unit-link active" aria-current="page">
+              <span>Lesson 1.2: Core Components: Hardware</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson1-3.html" class="unit-link">
+              <span>Lesson 1.3: Core Components: Software</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+      <!-- UNIT 2 -->
+      <details class="unit-group">
+        <summary class="unit-summary">Unit 2: Data Representation &amp; Number Systems</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson2-1.html" class="unit-link">
+              <span>Lesson 2.1: Number Systems and Conversion</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson2-2.html" class="unit-link">
+              <span>Lesson 2.2: Encoding Standards</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson2-3.html" class="unit-link">
+              <span>Lesson 2.3: Boolean Logic and Gates</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+      <!-- UNIT 3 -->
+      <details class="unit-group">
+        <summary class="unit-summary">Unit 3: Connectivity &amp; Cybersecurity</summary>
+        <div class="unit-list">
+            <a href="intrcs-lesson3-1.html" class="unit-link">
+              <span>Lesson 3.1: Connectivity and Networking</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+            <a href="intrcs-lesson3-2.html" class="unit-link">
+              <span>Lesson 3.2: Cybersecurity and Ethical Hacking</span>
+              <span class="status-tag ready">Active</span>
+            </a>
+        </div>
+      </details>
+    </aside>
+
+    <!-- Main Lesson Workspace -->
+    <main id="main-content" class="workspace-content">
+      <div class="experiment-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>LESSON 1.2</h1>
+            <p class="experiment-subtitle">Core Components of Computer Systems: Hardware</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="intrcs-quiz1-2.html" class="btn-navy-link">Take Quiz 1.2 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()" aria-label="Download or print Lesson 1.2 Reviewer PDF">
+            &#11015; Download Reviewer
+          </button>
+        </div>
+      </div>
+
+      <!-- Captology Warning Message -->
+      <div class="warning-banner" role="alert">
+        <strong>Hardware &amp; ESD Safety Warning:</strong> Always power down the workstation, unplug the PSU cable, and discharge static electricity before touching exposed motherboard circuits, CPU pins, or RAM DIMMs.
+      </div>
+
+
+      <section class="lesson-section">
+        <h2>1.2.1. System Unit Components (CPU, Motherboard, Memory)</h2>
+        <p>The <strong>System Unit</strong> serves as the physical engine of the Information Processing Cycle's <em>Processing</em> stage.</p>
+
+        <h3>A. Central Processing Unit (CPU): The "Brain"</h3>
+        <p>The CPU executes program instructions and performs all calculations and logical decisions (e.g., Intel Core i7/i9, AMD Ryzen 7/9, Apple M2/M3, Intel Xeon, AMD EPYC, Qualcomm Snapdragon SoC).</p>
+        <div class="concept-grid">
+          <article class="concept-card">
+            <h4>Control Unit (CU)</h4>
+            <p>Coordinates and directs system operations, fetching instructions and orchestrating signal flow across hardware.</p>
+          </article>
+          <article class="concept-card">
+            <h4>Arithmetic Logic Unit (ALU)</h4>
+            <p>Performs all mathematical operations (addition, subtraction) and logical comparisons (e.g., X &gt; Y).</p>
+          </article>
+          <article class="concept-card">
+            <h4>CPU Registers</h4>
+            <p>Ultra-fast internal memory cells located directly inside the CPU for immediate instruction operands and results.</p>
+          </article>
+        </div>
+
+        <div class="ipc-diagram-box">
+          <svg width="640" height="130" viewBox="0 0 640 130" role="img" aria-label="CPU Fetch-Execute Cycle diagram: 1. Fetch from RAM, 2. Decode instruction, 3. Execute in ALU, 4. Store in Register or RAM">
+            <rect x="10" y="30" width="135" height="68" rx="10" fill="#193B5A"/>
+            <text x="77" y="58" text-anchor="middle" font-weight="800" font-size="13" fill="#F4B400">1. FETCH</text>
+            <text x="77" y="77" text-anchor="middle" font-size="11" fill="#FFFFFF">Retrieve from RAM</text>
+            <line x1="145" y1="64" x2="167" y2="64" stroke="#193B5A" stroke-width="2.5"/>
+            <polygon points="167,59 177,64 167,69" fill="#193B5A"/>
+
+            <rect x="178" y="30" width="135" height="68" rx="10" fill="#EAEAEA" stroke="#193B5A" stroke-width="2"/>
+            <text x="245" y="58" text-anchor="middle" font-weight="800" font-size="13" fill="#000">2. DECODE</text>
+            <text x="245" y="77" text-anchor="middle" font-size="11" fill="#333">Translate to signals</text>
+            <line x1="313" y1="64" x2="335" y2="64" stroke="#193B5A" stroke-width="2.5"/>
+            <polygon points="335,59 345,64 335,69" fill="#193B5A"/>
+
+            <rect x="346" y="30" width="135" height="68" rx="10" fill="#193B5A"/>
+            <text x="413" y="58" text-anchor="middle" font-weight="800" font-size="13" fill="#F4B400">3. EXECUTE</text>
+            <text x="413" y="77" text-anchor="middle" font-size="11" fill="#FFFFFF">ALU math / logic</text>
+            <line x1="481" y1="64" x2="503" y2="64" stroke="#193B5A" stroke-width="2.5"/>
+            <polygon points="503,59 513,64 503,69" fill="#193B5A"/>
+
+            <rect x="514" y="30" width="116" height="68" rx="10" fill="#FFF8E1" stroke="#F4B400" stroke-width="2"/>
+            <text x="572" y="58" text-anchor="middle" font-weight="800" font-size="13" fill="#000">4. STORE</text>
+            <text x="572" y="77" text-anchor="middle" font-size="11" fill="#333">Register / RAM</text>
+          </svg>
+          <p class="ipc-caption">Figure 1.2: The CPU Fetch-Execute (Instruction) Cycle.</p>
+        </div>
+
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>CPU Metric</th>
+              <th>Definition</th>
+              <th>Practical Impact</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Clock Speed (GHz)</strong></td>
+              <td>Number of instruction cycles executed per second (1 GHz = 1 billion cycles/sec).</td>
+              <td>Crucial for single-threaded tasks and legacy applications.</td>
+            </tr>
+            <tr>
+              <td><strong>Cores</strong></td>
+              <td>Number of independent processing units on a single chip (e.g., 4, 6, 8+ cores).</td>
+              <td>Enables parallel Fetch-Execute cycles for multitasking and modern multi-threaded apps.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h3>B. The Motherboard: The "Spine"</h3>
+        <p>The main printed circuit board (PCB) physically and electronically linking the CPU, RAM, storage, and peripherals.</p>
+        <ul>
+          <li><strong>Chipset ("Traffic Cop"):</strong> Integrated circuits managing data flow between the CPU, memory, and high-speed slots.</li>
+          <li><strong>Bus ("Electronic Highway"):</strong> Electronic wire pathways transferring data between components (e.g., <strong>PCIe</strong> for GPUs/NVMe SSDs; <strong>USB</strong> for external peripherals).</li>
+        </ul>
+
+        <h3>C. Primary Memory: RAM vs. ROM</h3>
+        <div class="two-col-grid">
+          <article class="concept-card">
+            <h4>RAM (Random Access Memory) — "Work Desk"</h4>
+            <p><strong>Volatile</strong> primary workspace for active programs and open data; contents are erased when power turns off. Types include <strong>DDR4</strong>, <strong>DDR5</strong>, <strong>LPDDR</strong> (mobile), <strong>SRAM</strong> (CPU L1/L2/L3 cache), and <strong>HBM</strong> (GPUs).</p>
+          </article>
+          <article class="concept-card">
+            <h4>ROM (Read-Only Memory) — "Printed Manual"</h4>
+            <p><strong>Non-volatile</strong> memory that retains permanent low-level startup firmware (<strong>BIOS / UEFI</strong>) used to initialize hardware and boot the OS.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section">
+        <h2>1.2.2 &amp; 1.2.3. Input and Output Peripherals</h2>
+        <div class="two-col-grid">
+          <article class="concept-card">
+            <h4>Input Devices (Data Entry &rarr; Binary)</h4>
+            <p>Convert physical actions or analog signals into binary 0s and 1s: <strong>Manual</strong> (keyboard, mouse, touchscreen), <strong>Optical</strong> (flatbed scanner, barcode reader), <strong>Acoustic</strong> (microphone ADC), and <strong>Biometric</strong> (fingerprint scanner).</p>
+          </article>
+          <article class="concept-card">
+            <h4>Output Devices (Binary &rarr; Human Format)</h4>
+            <p>Translate processed binary results into visual, audio, or physical forms: <strong>Display Screens</strong> (LCD/LED/OLED measured by resolution &amp; Hz), <strong>Projectors</strong> (HDMI/VGA/wireless), <strong>Printers</strong> (inkjet &amp; laser hardcopy), and <strong>Speakers/Headphones</strong>.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="lesson-section">
+        <h2>1.2.4. Storage Hierarchy (Primary, Secondary, Tertiary)</h2>
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Tier</th>
+              <th>Examples</th>
+              <th>Volatility &amp; Characteristics</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. CPU Registers &amp; Cache</strong></td>
+              <td>Internal Registers, L1/L2/L3 SRAM Cache</td>
+              <td>Fastest access speed, smallest capacity, volatile.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Primary Storage</strong></td>
+              <td>Dynamic RAM (DDR4/DDR5), ROM (BIOS/UEFI)</td>
+              <td>Directly accessible by CPU; RAM is volatile active workspace.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Secondary Storage</strong></td>
+              <td><strong>SSD</strong> (flash memory, no moving parts, fast boot), <strong>HDD</strong> (spinning magnetic platters, high capacity/low cost), USB Flash Drive, SD Card, NAS</td>
+              <td><strong>Non-volatile</strong> long-term file retention. Hybrid SSD + HDD balances speed and archival budget.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Tertiary / Archival Storage</strong></td>
+              <td>Magnetic Tape Drives, Automated Tape Libraries, Optical Disc Archives, Cloud Cold Storage (AWS Glacier)</td>
+              <td>Massive capacity, lowest cost per GB, slowest retrieval speed for cold backups.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section class="lesson-section">
+        <h2>References (APA 7th Edition)</h2>
+        <ul>
+          <li>University of Baguio. (2026). <em>INTRCS1: Introduction to computing systems — Lesson 1.2: Core components of computer systems: Hardware</em>. School of Information Technology.</li>
+        </ul>
+      </section>
+    
+    </main>
+  </div>
+
+  <!-- Captology Pop-up Prompt Modal -->
+  <div class="modal-backdrop" id="study-popup-modal" data-auto-prompt="false" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+    <div class="modal-card">
+      <h3 id="popup-title">Ready to Test Your Mastery?</h3>
+      <p id="popup-body">Take Quiz 1.2 now to earn course progress and extend your study streak!</p>
+      <a href="intrcs-quiz1-2.html" class="btn-primary" style="display:inline-block; text-decoration:none;">Go to Quiz 1.2</a>
+      <button type="button" id="close-popup-btn" class="btn-secondary">Continue</button>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 UB IT Study Hub — Maria Concepcion M. Sapanlay.</p>
+      
+      <!-- Philippine NPC Data Privacy / HTTPS Verification Seal & QR Code (Bottom Right) -->
+      <div class="dpo-seal-box" aria-label="Philippine National Privacy Commission HTTPS Seal and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine Data Privacy HTTPS Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          NPC DPO / HTTPS VERIFIED
+          <span>Republic of the Philippines &bull; Data Privacy Act</span>
+        </div>
+        <!-- Inline SVG Verification QR Code -->
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

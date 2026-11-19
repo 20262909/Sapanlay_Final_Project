@@ -1025,3 +1025,36 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
     grid-template-columns: 1fr;
   }
 }
+
+/* Additional Diagram & Unit Table Styles for Lessons 1.2 - 3.2 */
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 14px 0;
+  font-size: 0.87rem;
+}
+.data-table th, .data-table td {
+  border: 1px solid var(--border-light);
+  padding: 9px 11px;
+  text-align: left;
+  vertical-align: top;
+}
+.data-table th {
+  background-color: var(--accent-navy);
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.data-table tr:nth-child(even) {
+  background-color: #F8FAFC;
+}
+.two-col-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin: 12px 0;
+}
+@media (max-width: 900px) {
+  .two-col-grid {
+    grid-template-columns: 1fr;
+  }
+}
